@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-zh="Ivyelite" data-en="Ivyelite">Ivyelite</title>
+  <link rel="stylesheet" href="navbar.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-container">
+
+    <div class="navbar-logo">
+      <img src="images/logo.png" alt="Ivyelite Logo" />
+    </div>
+
+    <!-- 手机端：汉堡按钮 -->
+    <button class="nav-toggle"
+            aria-label="打开菜单"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            data-aria-zh="打开菜单"
+            data-aria-en="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- 菜单 -->
+    <nav class="navbar-menu" id="primary-nav">
+      <a href="homepage.html" class="nav-item" data-zh="主页" data-en="Home">主页</a>
+      <a href="planning.html" class="nav-item" data-zh="留学规划" data-en="Planning">留学规划</a>
+      <a href="butler.html" class="nav-item" data-zh="留学管家" data-en="Butler">留学管家</a>
+      <a href="class.html" class="nav-item active" data-zh="课程辅导" data-en="Tutoring">课程辅导</a>
+      <a href="career.html" class="nav-item" data-zh="职业规划" data-en="Career">职业规划</a>
+      <a href="ACCP.html" class="nav-item" data-zh="ACCP" data-en="ACCP">ACCP</a>
+      <a href="resource.html" class="nav-item" data-zh="师资力量" data-en="Mentors">师资力量</a>
+      <a href="contact.html" class="nav-item" data-zh="联系方式" data-en="Contact">联系方式</a>
+    </nav>
+
+    <!-- 语言切换按钮 -->
+    <button id="langToggle" class="nav-item lang-toggle">中 / EN</button>
+
+  </div>
+</header>
+
+
+<section class="course-section">
+  <img
+    src="images/NYC1.jpg"
+    alt="student studying background"
+    class="course-image"
+  />
+  <div class="course-overlay"></div>
+
+  <div class="course-content">
+    <h1
+      data-zh="当课程开始变难，你不必一个人硬扛"
+      data-en="When classes get hard, you don't have to push through alone.">
+      当课程开始变难，你不必一个人硬扛
+    </h1>
+
+    <a href="contact.html" class="course-btn"
+       data-zh="立即咨询"
+       data-en="Consult Now">
+      立即咨询
+    </a>
+  </div>
+</section>
+
+
+<section class="cp-card-area">
+
+  <h2 class="cp-area-title"
+      data-zh="学术辅导内容"
+      data-en="What We Support">
+    学术辅导内容
+  </h2>
+
+  <div class="cp-card-grid">
+
+    <div class="cp-card">
+      <img src="images/tutoricon.png" class="cp-card-icon" alt="">
+      <div class="cp-card-text">
+        <h3 data-zh="课程辅导" data-en="Course Tutoring">课程辅导</h3>
+        <p class = "allow-br"
+          data-zh="总结课程内容与核心概念<br>梳理知识结构与逻辑框架<br>重点难点拆解与案例讲解<br>阅读材料解析与重点筛选<br>课程要求解读与学习策略制定"
+          data-en="Summarize key concepts and course content<br>Build a clear knowledge structure and logic map<br>Break down difficult topics with examples<br>Explain readings and highlight what matters most<br>Interpret requirements and design study strategies">
+          总结课程内容与核心概念<br>
+          梳理知识结构与逻辑框架<br>
+          重点难点拆解与案例讲解<br>
+          阅读材料解析与重点筛选<br>
+          课程要求解读与学习策略制定
+        </p>
+      </div>
+    </div>
+
+    <div class="cp-card">
+      <img src="images/testicon.png" class="cp-card-icon" alt="">
+      <div class="cp-card-text">
+        <h3 data-zh="考前梳理" data-en="Exam Prep">考前梳理</h3>
+        <p class= "allow-br"
+          data-zh="期中/期末重点知识点提炼<br>考前复习计划与时间管理建议<br>题型特点分析与应对策略<br>复习路径优先级规划<br>典型题目讲解与查漏补缺"
+          data-en="Extract key topics for midterms/finals<br>Create revision plans with time management skills<br>Analyze question types and strategies<br>Design your review path effectively<br>Walk through typical problems and fill knowledge gaps">
+          期中/期末重点知识点提炼<br>
+          考前复习计划与时间管理建议<br>
+          题型特点分析与应对策略<br>
+          复习路径优先级规划<br>
+          典型题目讲解与查漏补缺
+        </p>
+      </div>
+    </div>
+
+    <div class="cp-card">
+      <img src="images/researchicon.png" class="cp-card-icon" alt="">
+      <div class="cp-card-text">
+        <h3 data-zh="科研辅导" data-en="Research Coaching">科研辅导</h3>
+        <p class = "allow-br"
+          data-zh="研究主题选择与可行性分析<br>研究问题与假设构建<br>研究方法选择与设计指导<br>文献检索与阅读方法指导<br>数据收集、整理与分析辅导"
+          data-en="Choose topics and assess feasibility<br>Formulate research questions and hypotheses<br>Select and design appropriate methods<br>Guide literature search and reading techniques<br>Support data collection, cleaning, and analysis">
+          研究主题选择与可行性分析<br>
+          研究问题与假设构建<br>
+          研究方法选择与设计指导<br>
+          文献检索与阅读方法指导<br>
+          数据收集、整理与分析辅导
+        </p>
+      </div>
+    </div>
+
+    <div class="cp-card">
+      <img src="images/homeworkicon.png" class="cp-card-icon" alt="">
+      <div class="cp-card-text">
+        <h3 data-zh="作业辅导" data-en="Assignment Support">作业辅导</h3>
+        <p class = "allow-br"
+          data-zh="作业要求与评分标准解析<br>作业思路梳理与写作路径规划<br>案例、数据、阅读材料使用指导<br>格式规范与引用规范检查<br>草稿审阅与逻辑调整建议"
+          data-en="Explain requirements and grading rubrics<br>Organize your approach and writing plan<br>Guide students to analyze cases, data, and readings properly<br>Check formatting and citation standards<br>Review drafts and strengthen logical flow">
+          作业要求与评分标准解析<br>
+          作业思路梳理与写作路径规划<br>
+          案例、数据、阅读材料使用指导<br>
+          格式规范与引用规范检查<br>
+          草稿审阅与逻辑调整建议
+        </p>
+      </div>
+    </div>
+
+    <div class="cp-card">
+      <img src="images/articleicon.png" class="cp-card-icon" alt="">
+      <div class="cp-card-text">
+        <h3 data-zh="论文修改" data-en="Paper Editing">论文修改</h3>
+        <p class = "allow-br"
+          data-zh="论文结构优化与逻辑链强化<br>论点提炼与论据支持完善<br>文献引用与学术规范检查<br>语言表达优化与风格调整<br>查重风险与投稿标准提醒"
+          data-en="Optimize structure and strengthen arguments<br>Clarify thesis and improve evidence support<br>Check citations and academic integrity standards<br>Polish language and adjust academic tone<br>Flag plagiarism risks and align with submission expectations">
+          论文结构优化与逻辑链强化<br>
+          论点提炼与论据支持完善<br>
+          文献引用与学术规范检查<br>
+          语言表达优化与风格调整<br>
+          查重风险与投稿标准提醒
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="hsflow">
+  <div class="hsflow__container">
+
+    <div class="hsflow__header">
+      <h2 data-zh="产品服务流程" data-en="How It Works">产品服务流程</h2>
+    </div>
+
+    <div class="hsflow__grid">
+
+      <div class="hsflow__step">
+        <div class="hsflow__badge">1</div>
+        <h3 class="hsflow__title" data-zh="学情诊断" data-en="Learning Diagnosis">学情诊断</h3>
+        <p class="hsflow__desc"
+           data-zh="对学生课程理解、作业表现、学习习惯等进行全面评估，明确问题来源与提升方向。"
+           data-en="Assess course understanding, assignment performance, and study habits to identify root causes and improvement directions.">
+          对学生课程理解、作业表现、学习习惯等进行全面评估，明确问题来源与提升方向。
+        </p>
+      </div>
+
+      <div class="hsflow__arrow hsflow__arrow--right" aria-hidden="true"></div>
+
+      <div class="hsflow__step">
+        <div class="hsflow__badge">2</div>
+        <h3 class="hsflow__title" data-zh="匹配专业导师" data-en="Match with the Right Tutor">匹配专业导师</h3>
+        <p class="hsflow__desc"
+           data-zh="根据科目、难度与学生习惯匹配最合适的专业导师，保障长期稳定、高质量辅导。"
+           data-en="Match a tutor based on subject, difficulty, and learning style to ensure stable, high-quality support long-term.">
+          根据科目、难度与学生习惯匹配最合适的专业导师，保障长期稳定、高质量辅导。
+        </p>
+      </div>
+
+      <div class="hsflow__arrow hsflow__arrow--right" aria-hidden="true"></div>
+
+      <div class="hsflow__step">
+        <div class="hsflow__badge">3</div>
+        <h3 class="hsflow__title" data-zh="制定方案签约" data-en="Plan & Onboarding">制定方案签约</h3>
+        <p class="hsflow__desc"
+           data-zh="结合诊断结果制定个性化辅导方案，明确课程重点、目标成果与辅导节奏，经签约确认后正式启动服务。"
+           data-en="Create a personalized plan with focus areas and target outcomes—officially start after confirmation.">
+          结合诊断结果制定个性化辅导方案，明确课程重点、目标成果与辅导节奏，经签约确认后正式启动服务。
+        </p>
+      </div>
+
+      <div class="hsflow__arrow hsflow__arrow--right" aria-hidden="true"></div>
+
+      <div class="hsflow__step">
+        <div class="hsflow__badge">4</div>
+        <h3 class="hsflow__title" data-zh="课程辅导执行" data-en="Tutoring Sessions">课程辅导执行</h3>
+        <p class="hsflow__desc"
+           data-zh="围绕课程内容、作业要求与阶段重点进行系统讲解、示例拆解与答疑，确保理解与应用同步提升。"
+           data-en="Deliver structured explanations, example breakdowns, and Q&A aligned with course content and milestones—improving understanding and application.">
+          围绕课程内容、作业要求与阶段重点进行系统讲解、示例拆解与答疑，确保理解与应用同步提升。
+        </p>
+      </div>
+
+      <div class="hsflow__arrow hsflow__arrow--right" aria-hidden="true"></div>
+
+      <div class="hsflow__step">
+        <div class="hsflow__badge">5</div>
+        <h3 class="hsflow__title" data-zh="阶段反馈与学习复盘" data-en="Progress Review & Feedback">阶段反馈与学习复盘</h3>
+        <p class="hsflow__desc"
+           data-zh="基于学生学习表现输出阶段报告，复盘薄弱点与学习行为，调整后续辅导策略，实现持续进步。"
+           data-en="Provide milestone reports, review weak points and learning behaviors, and adjust strategies to ensure steady progress.">
+          基于学生学习表现输出阶段报告，复盘薄弱点与学习行为，调整后续辅导策略，实现持续进步。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="hero-section">
+  <img
+    src="images/NYC2.jpg"
+    alt="NYC Background"
+    class="hero-image hero-image-up"
+  />
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1
+      data-zh="有一个可以随时求助的支持，本身就是一种力量"
+      data-en="Having support you can reach anytime is a strength in itself.">
+      有一个可以随时求助的支持，本身就是一种力量
+    </h1>
+
+    <a href="contact.html" class="hero-btn"
+       data-zh="立即咨询"
+       data-en="Consult Now">
+      立即咨询
+    </a>
+  </div>
+</section>
+
+
+<section class="contact-section">
+  <div class="contact-container">
+
+    <div class="contact-brand">
+      <img src="images/logo.png" alt="Ivyelite Logo" class="contact-logo">
+
+      <p class="contact-slogan"
+         data-zh="以终为始 从名校录取到名企就业"
+         data-en="Outcome-first: from top admissions to top careers">
+        以终为始 从名校录取到名企就业
+      </p>
+    </div>
+
+    <div class="contact-info">
+      <img src="images/QRcode.png" alt="官方微信二维码" class="contact-qr">
+      <p class="contact-qr-label" data-zh="官方微信" data-en="Official WeChat">官方微信</p>
+
+      <div class="contact-details">
+        <p>📞 +1-984-369-3566</p>
+        <p>📞 +1-919-259-9861</p>
+        <p>📞 +86 18853235062</p>
+        <p data-zh="电子邮箱： ivyelite001@gmail.com"
+           data-en="Email: ivyelite001@gmail.com">
+          电子邮箱： ivyelite001@gmail.com
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    © 2025 IvyElite, LLC
+  </div>
+</section>
+
+
+<!-- 手机端菜单 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.querySelector(".nav-toggle");
+    var menu = document.querySelector(".navbar-menu");
+
+    if (!btn || !menu) return;
+
+    btn.addEventListener("click", function () {
+      var isOpen = menu.classList.contains("is-open");
+      if (isOpen) {
+        menu.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+      } else {
+        menu.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+</script>
+
+<!-- 中英文切换（localStorage 记忆 + 切换收起菜单） -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var savedLang = localStorage.getItem("ivyelite_lang");
+    var currentLang = savedLang ? savedLang : "zh";
+
+    var toggleBtn = document.getElementById("langToggle");
+    var translatable = document.querySelectorAll("[data-zh][data-en]");
+    var titleEl = document.querySelector("title");
+    var menuBtn = document.querySelector(".nav-toggle");
+    var menu = document.querySelector(".navbar-menu");
+
+    if (!toggleBtn) return;
+
+    function updateButtonText() {
+      if (currentLang === "zh") {
+        toggleBtn.textContent = "中 / EN";
+      } else {
+        toggleBtn.textContent = "EN / 中";
+      }
+    }
+
+    function closeMenu() {
+      if (menu) {
+        menu.classList.remove("is-open");
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+    }
+
+    function applyLang() {
+      translatable.forEach(function (el) {
+        var val = el.dataset[currentLang] || "";
+
+        //  只允许 hs-metric__label 使用 <br>
+        //  允许指定元素使用 <br>
+        if (el.classList.contains("hs-metric__label") || el.classList.contains("allow-br")) {
+          el.innerHTML = val;     // 允许 <br>
+        } else {
+          el.textContent = val;   // 其他走安全模式
+        }
+      });
+
+      if (titleEl && titleEl.dataset && titleEl.dataset[currentLang]) {
+        titleEl.textContent = titleEl.dataset[currentLang];
+      }
+
+      document.documentElement.lang = currentLang === "zh" ? "zh-CN" : "en";
+
+      if (menuBtn) {
+        if (currentLang === "zh") {
+          menuBtn.setAttribute("aria-label", menuBtn.getAttribute("data-aria-zh") || "打开菜单");
+        } else {
+          menuBtn.setAttribute("aria-label", menuBtn.getAttribute("data-aria-en") || "Open menu");
+        }
+      }
+
+      updateButtonText();
+      closeMenu();
+      localStorage.setItem("ivyelite_lang", currentLang);
+    }
+
+    toggleBtn.addEventListener("click", function () {
+      currentLang = currentLang === "zh" ? "en" : "zh";
+      applyLang();
+    });
+
+    applyLang();
+  });
+</script>
+
+</body>
+</html>

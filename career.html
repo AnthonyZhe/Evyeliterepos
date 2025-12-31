@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-zh="Ivyelite" data-en="Ivyelite">Ivyelite</title>
+  <link rel="stylesheet" href="navbar.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-container">
+
+    <div class="navbar-logo">
+      <img src="images/logo.png" alt="Ivyelite Logo" />
+    </div>
+
+    <!-- ✅ 手机端：汉堡按钮 -->
+    <button class="nav-toggle"
+            aria-label="打开菜单"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            data-aria-zh="打开菜单"
+            data-aria-en="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- ✅ 菜单 -->
+    <nav class="navbar-menu" id="primary-nav">
+      <a href="homepage.html" class="nav-item" data-zh="主页" data-en="Home">主页</a>
+      <a href="planning.html" class="nav-item" data-zh="留学规划" data-en="Planning">留学规划</a>
+      <a href="butler.html" class="nav-item" data-zh="留学管家" data-en="Butler">留学管家</a>
+      <a href="class.html" class="nav-item" data-zh="课程辅导" data-en="Tutoring">课程辅导</a>
+      <a href="career.html" class="nav-item active" data-zh="职业规划" data-en="Career">职业规划</a>
+      <a href="ACCP.html" class="nav-item" data-zh="ACCP" data-en="ACCP">ACCP</a>
+      <a href="resource.html" class="nav-item" data-zh="师资力量" data-en="Mentors">师资力量</a>
+      <a href="contact.html" class="nav-item" data-zh="联系方式" data-en="Contact">联系方式</a>
+    </nav>
+
+    <!-- ✅ 语言切换按钮 -->
+    <button id="langToggle" class="nav-item lang-toggle">中 / EN</button>
+
+  </div>
+</header>
+
+
+<section class="hero-section">
+  <img
+    src="images/Vancouver1.jpg"
+    alt="student studying background"
+    class="hero-image"
+  />
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1
+      data-zh="名校只是起点，真正重要的是你将走向哪里"
+      data-en="A top school is only the beginning—what matters is where you go next.">
+      名校只是起点，真正重要的是你将走向哪里
+    </h1>
+
+    <a href="contact.html" class="hero-btn"
+       data-zh="立即咨询"
+       data-en="Consult Now">
+      立即咨询
+    </a>
+  </div>
+</section>
+
+
+<section class="ivy-intro-section">
+  <div class="ivy-intro-wrap">
+
+    <!-- 左侧：深蓝文案卡 -->
+    <div class="ivy-intro-panel">
+      <h2 class="ivy-intro-title"
+          data-zh="做留学，更做未来"
+          data-en="Beyond Admissions—Building Your Future">
+        做留学，更做未来
+      </h2>
+
+      <p class="ivy-intro-text allow-br"
+         data-zh="Ivyelite 是一家专注于名校申请 + 背景提升 + 职业落地的一站式高端教育平台。我们不止帮助学生“申请到”，更致力于让他们“顺利走出”。<br><br>在 Ivyelite,我们相信每一位学生都值得被全球最好的人生选中。我们提供的不只是申请服务，而是一场以结果为导向的留学投资回报之旅。"
+         data-en="Ivyelite is a premium, one-stop education platform focused on top-school admissions, profile building, and career outcomes. We don't just help students “get in”—we help them “go far.”<br><br>At Ivyelite, we believe every student deserves to be chosen by the best opportunities worldwide. What we offer is more than applications—it's an outcome-oriented journey with real ROI on your study-abroad investment.">
+        Ivyelite 是一家专注于名模块申请 + 背景提升 + 职业落地的一站式高端教育平台。
+        我们不止帮助学生“申请到”，更致力于让他们“顺利走出”。<br><br>
+        在 Ivyelite, 我们相信每一位学生都值得被全球最好的人生选中。
+        我们提供的不只是申请服务，而是一场以结果为导向的留学投资回报之旅。
+      </p>
+    </div>
+
+    <!-- 右侧：功能卡片网格 -->
+    <div class="ivy-intro-grid" aria-label="核心服务">
+
+      <a class="ivy-intro-card" href="#highschool">
+        <img src="images/careerintro1.png" class="ivy-intro-icon" alt="">
+        <h4 class="ivy-intro-card-title"
+            data-zh="高中背景提升"
+            data-en="High School Profile Building">
+          高中背景提升
+        </h4>
+        <p class="ivy-intro-card-desc"
+           data-zh="系统规划学术与活动路径，提前构建名校竞争力。"
+           data-en="Plan academics and activities strategically to build early competitiveness for top schools.">
+          系统规划学术与活动路径，提前构建名校竞争力。
+        </p>
+      </a>
+
+      <a class="ivy-intro-card" href="#research">
+        <img src="images/careerintro2.png" class="ivy-intro-icon" alt="">
+        <h4 class="ivy-intro-card-title"
+            data-zh="科研项目"
+            data-en="Research Projects">
+          科研项目
+        </h4>
+        <p class="ivy-intro-card-desc"
+           data-zh="导师制科研训练，打造真实可验证的学术成果。"
+           data-en="Mentor-led research training to produce real, verifiable academic outcomes.">
+          导师制科研训练，打造真实可验证的学术成果。
+        </p>
+      </a>
+
+      <a class="ivy-intro-card" href="#internship">
+        <img src="images/careerintro3.png" class="ivy-intro-icon" alt="">
+        <h4 class="ivy-intro-card-title"
+            data-zh="海外实习"
+            data-en="Global Internships">
+          海外实习
+        </h4>
+        <p class="ivy-intro-card-desc"
+           data-zh="对接海外企业与实验室，补齐真实国际经历。"
+           data-en="Connect with global companies and labs to build authentic international experience.">
+          对接海外企业与实验室，补齐真实国际经历。
+        </p>
+      </a>
+
+      <a class="ivy-intro-card" href="#career">
+        <img src="images/careerintro4.png" class="ivy-intro-icon" alt="">
+        <h4 class="ivy-intro-card-title"
+            data-zh="名企就业"
+            data-en="Top-Tier Employment">
+          名企就业
+        </h4>
+        <p class="ivy-intro-card-desc"
+           data-zh="从选校开始倒推职业路径，直通核心岗位。"
+           data-en="Reverse-design your career path starting from school choices—aim directly for core roles.">
+          从选校开始倒推职业路径，直通核心岗位。
+        </p>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="highschool" class="hs1-section">
+  <h2 class="hs1-title"
+      data-zh="高中背景提升"
+      data-en="High School Profile Building">
+    高中背景提升
+  </h2>
+
+  <div class="hs1-wrap">
+    <div class="hs1-photo">
+      <img src="images/highschool-bg.jpg" alt="高中背景提升">
+    </div>
+
+    <div class="hs1-card">
+      <h3 data-zh="海外名企导师实践项目" data-en="Mentor-Led Projects with Global Companies">
+        海外名企导师实践项目
+      </h3>
+      <p
+        data-zh="通过与谷歌、摩根士丹利、联合国、微软等全球知名企业背景导师深度合作, Ivyelite 为高中生提供远程参与真实商业 / 科技项目的机会，涵盖数据分析、产品设计、市场策略、可持续发展等方向。"
+        data-en="Through deep collaboration with mentors from globally recognized organizations such as Google, Morgan Stanley, the United Nations, and Microsoft, Ivyelite offers high school students remote access to real-world business and tech projects—covering data analytics, product design, market strategy, and sustainability.">
+        通过与谷歌、摩根士丹利、联合国、微软等全球知名企业背景导师深度合作，
+        Ivyelite 为高中生提供远程参与真实商业 / 科技项目的机会，
+        涵盖数据分析、产品设计、市场策略、可持续发展等方向。
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="research" class="rs2-section">
+  <h2 class="rs2-title" data-zh="科研项目" data-en="Research Projects">科研项目</h2>
+
+  <div class="rs2-grid">
+
+    <div class="rs2-item">
+      <div class="rs2-photo">
+        <img src="images/research-bg1.jpg" alt="国际导师科研指导计划">
+      </div>
+
+      <div class="rs2-card">
+        <h3 data-zh="国际导师科研指导计划" data-en="Research Mentorship with International Faculty">
+          国际导师科研指导计划
+        </h3>
+        <p
+          data-zh="由世界知名大学教授或研究员担任导师，学生将在全英文科研环境中参与选题讨论、资料整理、结构建模及成果展示。项目旨在提升学生的批判性思维、学术表达与研究素养，为后续名校申请打下坚实基础。"
+          data-en="Mentored by professors or researchers from world-renowned universities, students work in an English-speaking research environment—topic selection, literature review, modeling, and final presentation. The program strengthens critical thinking, academic communication, and research literacy for future top-school applications.">
+          由世界知名大学教授或研究员担任导师，学生将在全英文科研环境中参与选题讨论、
+          资料整理、结构建模及成果展示。项目旨在提升学生的批判性思维、学术表达与研究素养，
+          为后续名校申请打下坚实基础。
+        </p>
+      </div>
+    </div>
+
+    <div class="rs2-item">
+      <div class="rs2-photo">
+        <img src="images/research-bg2.png" alt="名校科研背景提升项目">
+      </div>
+
+      <div class="rs2-card">
+        <h3 data-zh="名校科研背景提升项目" data-en="Top-School Research Profile Program">
+          名校科研背景提升项目
+        </h3>
+        <p
+          data-zh="通过参与真实的跨学科科研项目，学生将在导师指导下完成课题调研与项目汇报，获得项目结业认证及推荐信支持。该项目适用于申请理工、商科、人文社科等多个专业方向，帮助学生在申请材料中体现“学术潜力”与“研究动手能力”。"
+          data-en="By joining authentic interdisciplinary research, students complete investigation and project reporting with mentor guidance, earning a completion certificate and recommendation support. Suitable for STEM, business, and humanities/social sciences, it helps demonstrate academic potential and hands-on research ability in applications.">
+          通过参与真实的跨学科科研项目，学生将在导师指导下完成课题调研与项目汇报，
+          获得项目结业认证及推荐信支持。该项目适用于申请理工、商科、人文社科等多个专业方向，
+          帮助学生在申请材料中体现“学术潜力”与“研究动手能力”。
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="internship" class="in3-section">
+  <h2 class="in3-title" data-zh="海外实习" data-en="Global Internships">海外实习</h2>
+
+  <div class="in3-grid">
+
+    <div class="in3-item">
+      <div class="in3-photo">
+        <img src="images/internship1.jpg" alt="远程实习">
+      </div>
+
+      <div class="in3-card">
+        <h3 data-zh="远程实习" data-en="Remote Internships">远程实习</h3>
+        <p
+          data-zh="通过与全球优质企业合作，学生可在不受地域限制的情况下参与真实商业项目，涵盖数据分析、市场研究、产品设计、咨询策略等方向。实习全程由企业导师或项目主管远程指导，确保任务交付与专业成长并重。结业后可获得实习证明与推荐信，显著提升留学/求职背景竞争力。"
+          data-en="Through partnerships with high-quality global companies, students join real business projects without geographic constraints—covering data analytics, market research, product design, and consulting strategy. Company mentors guide the process remotely to ensure both delivery and growth. Graduates receive internship verification and recommendation support to strengthen admissions and job applications.">
+          通过与全球优质企业合作，学生可在不受地域限制的情况下参与真实商业项目，
+          涵盖数据分析、市场研究、产品设计、咨询策略等方向。
+          实习全程由企业导师或项目主管远程指导，确保任务交付与专业成长并重。
+          结业后可获得实习证明与推荐信，显著提升留学/求职背景竞争力。
+        </p>
+      </div>
+    </div>
+
+    <div class="in3-item">
+      <div class="in3-photo">
+        <img src="images/internship2.jpg" alt="实地实习">
+      </div>
+
+      <div class="in3-card">
+        <h3 data-zh="实地实习" data-en="On-site Internships">实地实习</h3>
+        <p
+          data-zh="Ivyelite 实地实习项目覆盖美国、英国、加拿大、澳洲等国家，学生将在当地企业中实地参与团队合作与日常业务运作。通过真实办公场景中的沉浸式工作体验，快速提升语言表达、跨文化沟通与专业实战能力。项目结束后可获得带企业 LOGO 的官方实习证明，助力后续名校申请或全职求职。"
+          data-en="Ivyelite on-site internships span the U.S., U.K., Canada, Australia, and more. Students work inside local companies, joining real teams and daily operations. Immersive workplace experiences accelerate communication, cross-cultural collaboration, and professional skillset. Upon completion, students receive an official certificate with the company logo—supporting future admissions and full-time recruitment.">
+          Ivyelite 实地实习项目覆盖美国、英国、加拿大、澳洲等国家，
+          学生将在当地企业中实地参与团队合作与日常业务运作。
+          通过真实办公场景中的沉浸式工作体验，快速提升语言表达、跨文化沟通与专业实战能力。
+          项目结束后可获得带企业 LOGO 的官方实习证明，助力后续名校申请或全职求职。
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="career" class="job4-section">
+  <h2 class="job4-title" data-zh="名企就业" data-en="Top-Tier Employment">名企就业</h2>
+
+  <div class="job4-wrap">
+    <div class="job4-photo">
+      <img src="images/job1.avif" alt="名企就业">
+    </div>
+
+    <div class="job4-card">
+      <h3 data-zh="全职上岸计划" data-en="Full-time Placement Program">全职上岸计划</h3>
+      <p
+        data-zh="Ivyelite 提供覆盖北美、英国、澳洲等主要就业市场的全职求职支持, 专为留学生打造从求职准备到入职上岸的全流程解决方案。服务涵盖岗位精准匹配、简历优化、1v1 大厂导师辅导、实战面试训练、内推资源对接等核心环节，重点覆盖科技、金融、咨询等热门行业。"
+        data-en="Ivyelite provides full-time job search support across major markets such as North America, the U.K., and Australia—built specifically for international students. We cover the full process from preparation to landing the offer: role matching, resume optimization, 1-on-1 coaching with big-company mentors, interview drills, and referral resources—focused on tech, finance, and consulting.">
+        Ivyelite 提供覆盖北美、英国、澳洲等主要就业市场的全职求职支持，
+        专为留学生打造从求职准备到入职上岸的全流程解决方案。
+        服务涵盖岗位精准匹配、简历优化、1v1 大厂导师辅导、实战面试训练、
+        内推资源对接等核心环节，重点覆盖科技、金融、咨询等热门行业。
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero-section">
+  <img
+    src="images/Vancouver2.jpg"
+    alt="Vancouver Background"
+    class="hero-image"
+  />
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1
+      data-zh="选择正确的路径，时间会替你放大优势"
+      data-en="Choose the right path—and time will amplify your advantage.">
+      选择正确的路径，时间会替你放大优势
+    </h1>
+
+    <a href="contact.html" class="hero-btn"
+       data-zh="立即咨询"
+       data-en="Consult Now">
+      立即咨询
+    </a>
+  </div>
+</section>
+
+
+<section class="contact-section">
+  <div class="contact-container">
+
+    <div class="contact-brand">
+      <img src="images/logo.png" alt="Ivyelite Logo" class="contact-logo">
+
+      <p class="contact-slogan"
+         data-zh="以终为始 从名校录取到名企就业"
+         data-en="Outcome-first: from top admissions to top careers">
+        以终为始 从名校录取到名企就业
+      </p>
+    </div>
+
+    <div class="contact-info">
+      <img src="images/QRcode.png" alt="官方微信二维码" class="contact-qr">
+      <p class="contact-qr-label" data-zh="官方微信" data-en="Official WeChat">官方微信</p>
+
+      <div class="contact-details">
+        <p>📞 +1-984-369-3566</p>
+        <p>📞 +1-919-259-9861</p>
+        <p>📞 +86 18853235062</p>
+        <p data-zh="电子邮箱： ivyelite001@gmail.com"
+           data-en="Email: ivyelite001@gmail.com">
+          电子邮箱： ivyelite001@gmail.com
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    © 2025 IvyElite, LLC
+  </div>
+</section>
+
+
+<!--  手机端菜单 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.querySelector(".nav-toggle");
+    var menu = document.querySelector(".navbar-menu");
+
+    if (!btn || !menu) return;
+
+    btn.addEventListener("click", function () {
+      var isOpen = menu.classList.contains("is-open");
+      if (isOpen) {
+        menu.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+      } else {
+        menu.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+</script>
+
+<!--  中英文切换 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var savedLang = localStorage.getItem("ivyelite_lang");
+    var currentLang = savedLang ? savedLang : "zh";
+
+    var toggleBtn = document.getElementById("langToggle");
+    var translatable = document.querySelectorAll("[data-zh][data-en]");
+    var titleEl = document.querySelector("title");
+    var menuBtn = document.querySelector(".nav-toggle");
+    var menu = document.querySelector(".navbar-menu");
+
+    if (!toggleBtn) return;
+
+    function updateButtonText() {
+      if (currentLang === "zh") {
+        toggleBtn.textContent = "中 / EN";
+      } else {
+        toggleBtn.textContent = "EN / 中";
+      }
+    }
+
+    function closeMenu() {
+      if (menu) {
+        menu.classList.remove("is-open");
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+    }
+
+    function applyLang() {
+      translatable.forEach(function (el) {
+        var val = el.dataset[currentLang] || "";
+
+        // 只允许 hs-metric__label 使用 <br>
+        if (
+            el.classList.contains("allow-br") ||
+            el.classList.contains("hs-metric__label")
+          ) {
+            el.innerHTML = val;
+          } else {
+            el.textContent = val;
+          }
+      });
+
+      if (titleEl && titleEl.dataset && titleEl.dataset[currentLang]) {
+        titleEl.textContent = titleEl.dataset[currentLang];
+      }
+
+      document.documentElement.lang = currentLang === "zh" ? "zh-CN" : "en";
+
+      if (menuBtn) {
+        if (currentLang === "zh") {
+          menuBtn.setAttribute("aria-label", menuBtn.getAttribute("data-aria-zh") || "打开菜单");
+        } else {
+          menuBtn.setAttribute("aria-label", menuBtn.getAttribute("data-aria-en") || "Open menu");
+        }
+      }
+
+      updateButtonText();
+      closeMenu();
+      localStorage.setItem("ivyelite_lang", currentLang);
+    }
+
+    toggleBtn.addEventListener("click", function () {
+      currentLang = currentLang === "zh" ? "en" : "zh";
+      applyLang();
+    });
+
+    applyLang();
+  });
+</script>
+
+</body>
+</html>
