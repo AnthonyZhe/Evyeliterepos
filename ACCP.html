@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- title 也做双语（给你的语言切换脚本用） -->
+  <title data-zh="Ivyelite" data-en="Ivyelite">Ivyelite</title>
+
+  <link rel="stylesheet" href="navbar.css" />
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="navbar-container">
+
+    <div class="navbar-logo">
+      <img src="images/logo.png" alt="Ivyelite Logo" />
+    </div>
+
+    <!-- 手机端：汉堡按钮 -->
+    <button class="nav-toggle"
+            aria-label="打开菜单"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            data-aria-zh="打开菜单"
+            data-aria-en="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- 菜单加 id（并做双语 data-zh/data-en） -->
+    <nav class="navbar-menu" id="primary-nav">
+      <a href="index.html" class="nav-item"
+         data-zh="主页" data-en="Home">主页</a>
+
+      <a href="planning.html" class="nav-item"
+         data-zh="留学规划" data-en="Planning">留学规划</a>
+
+      <a href="butler.html" class="nav-item"
+         data-zh="留学管家" data-en="Butler">留学管家</a>
+
+      <a href="class.html" class="nav-item"
+         data-zh="课程辅导" data-en="Tutoring">课程辅导</a>
+
+      <a href="career.html" class="nav-item"
+         data-zh="职业规划" data-en="Career">职业规划</a>
+
+      <a href="ACCP.html" class="nav-item active"
+         data-zh="ACCP" data-en="ACCP">ACCP</a>
+
+      <a href="resource.html" class="nav-item"
+         data-zh="师资力量" data-en="Mentors">师资力量</a>
+
+      <a href="contact.html" class="nav-item"
+         data-zh="联系方式" data-en="Contact">联系方式</a>
+    </nav>
+
+    <!-- 语言切换按钮（保持你的标准格式） -->
+    <button id="langToggle" class="nav-item lang-toggle">
+      中 / EN
+    </button>
+
+  </div>
+</header>
+
+
+<!-- ================= Hero 1 ================= -->
+<section class="hero-section">
+
+  <img
+    src="images/ICL1.jpg"
+    alt="student studying background"
+    class="hero-image"
+  />
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1
+      data-zh="每一份 ACCP 升学方案，都是围绕学生个人潜力打造的“名校路线图”"
+      data-en="Every ACCP pathway is a personalized roadmap built around each student's academic potential.">
+      每一份 ACCP 升学方案，都是围绕学生个人潜力打造的“名校路线图”
+    </h1>
+
+    <a href="contact.html" class="hero-btn"
+       data-zh="立即咨询"
+       data-en="Consult Now">
+      立即咨询
+    </a>
+  </div>
+</section>
+
+
+<!-- ================= 项目介绍 ================= -->
+<section class="accp-intro">
+  <div class="accp-intro__container">
+
+    <h2 class="accp-intro__title"
+        data-zh="项目介绍"
+        data-en="Program Overview">
+      项目介绍
+    </h2>
+
+    <div class="accp-intro__content">
+
+      <div class="accp-intro__left">
+
+        <p
+          data-zh="ACCP 名校直升项目是基于美国特色双学分课程研发的升学项目。参与项目的同学可同时获得美国大学成绩单、美国高中成绩单和美国高中毕业证。"
+          data-en="The ACCP Direct Pathway Program is built on the U.S. dual-credit system. Students can earn an official U.S. university transcript, U.S. high school transcript, and a U.S. high school diploma simultaneously.">
+          ACCP 名校直升项目是基于美国特色双学分课程研发的升学项目。
+          参与项目的同学可同时获得
+          美国大学成绩单、美国高中成绩单和美国高中毕业证。
+        </p>
+
+        <p
+          data-zh="学生在学习语言课程的同时，完成至少 10 门 ACCP 双学分课程，可携带 1 年大学学分进入北美院校；或免预科直升项目内世界百强大学，包括澳洲大学、新西兰大学等。"
+          data-en="Alongside language preparation, students complete at least 10 ACCP dual-credit courses—entering North American institutions with up to one year of transferable college credits, or gaining direct entry to Top 100 universities in Australia and New Zealand without foundation programs.">
+          学生在学习语言课程的同时，完成至少
+          10 门 ACCP 双学分课程，
+          可携带 1 年大学学分进入北美院校；
+          或免预科直升项目内世界百强大学，包括澳洲大学、新西兰大学等。
+        </p>
+
+        <p
+          data-zh="通过过程性评估机制，稳定 GPA 的同时，全面提升学生的学术能力与海外大学适应力。"
+          data-en="Through continuous assessment, ACCP helps stabilize GPA outcomes while strengthening academic rigor and international university readiness.">
+          通过过程性评估机制，稳定 GPA 的同时，全面提升学生的学术能力与海外大学适应力。
+        </p>
+
+      </div>
+
+      <div class="accp-intro__right">
+
+        <div class="accp-card">
+          <img src="images/AccpUni.png" alt="Dual Enrollment">
+          <span
+            data-zh="美国高中&大学<br>双学籍"
+            data-en="Dual Enrollment:<br>U.S. High School & University">
+            美国高中&大学<br>双学籍
+          </span>
+        </div>
+
+        <div class="accp-card">
+          <img src="images/Accpdirect.png" alt="Direct Entry">
+          <span
+            data-zh="直升北美<br>本科大二"
+            data-en="Direct Entry to<br>Year 2 Undergraduate">
+            直升北美<br>本科大二
+          </span>
+        </div>
+
+        <div class="accp-card">
+          <img src="images/Accpstable.png" alt="GPA Stability">
+          <span
+            data-zh="过程性评价机制<br>稳定 GPA"
+            data-en="Continuous Assessment<br>for GPA Stability">
+            过程性评价机制<br>稳定 GPA
+          </span>
+        </div>
+
+        <div class="accp-card">
+          <img src="images/Accpaus.png" alt="No Foundation">
+          <span
+            data-zh="免预科<br>直升澳新大一"
+            data-en="Direct Entry to AU/NZ Year 1">
+            免预科<br>直升澳新大一
+          </span>
+        </div>
+
+        <div class="accp-card">
+          <img src="images/Accpclass.png" alt="Curriculum">
+          <span
+            data-zh="课程设置<br>严谨多元"
+            data-en="Rigorous & Diverse<br>Curriculum Design">
+            课程设置<br>严谨多元
+          </span>
+        </div>
+
+        <div class="accp-card">
+          <img src="images/Accpcomb.png" alt="Faculty">
+          <span
+            data-zh="中教外教<br>融合授课"
+            data-en="Integrated Teaching by<br>Local & International Faculty">
+            中教外教<br>融合授课
+          </span>
+        </div>
+
+        <div class="accp-card">
+          <img src="images/Accpcheck.png" alt="Academic Skills">
+          <span
+            data-zh="大学课程难度<br>提升学术能力"
+            data-en="University-level Rigor<br>Strengthening Academic Skills">
+            大学课程难度<br>提升学术能力
+          </span>
+        </div>
+
+        <div class="accp-card">
+          <img src="images/Accptop.png" alt="Top Universities">
+          <span
+            data-zh="世界 TOP 院校<br>录取保障"
+            data-en="Guaranteed Pathways<br>to Global Top Universities">
+            世界 TOP 院校<br>录取保障
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= 项目优势 ================= -->
+<section class="accp-advantages">
+  <div class="accp-advantages__container">
+
+    <h2 class="accp-advantages__title"
+        data-zh="项目优势"
+        data-en="Key Advantages">
+      项目优势
+    </h2>
+
+    <div class="accp-advantages__grid">
+
+      <div class="adv-card">
+        <h3 data-zh="课程种类丰富" data-en="Broader Course Coverage">课程种类丰富</h3>
+        <p
+          data-zh="双学分课程种类丰富，课程覆盖面比 AP 课程更广，给学生更多的选择。"
+          data-en="ACCP offers a broader range of dual-credit courses than AP, providing students with greater academic flexibility and alignment options.">
+          双学分课程种类丰富，课程覆盖面比 AP 课程更广，
+          给学生更多的选择。
+        </p>
+      </div>
+
+      <div class="adv-card">
+        <h3 data-zh="过程性评价" data-en="Continuous Evaluation Model">过程性评价</h3>
+        <p
+          data-zh="双学分课程的成绩基于日常作业、期中与期末考试、报告和课堂活动综合评估，而非一次期末考试定结果；学生完成课程即可获得学分。"
+          data-en="Grades are determined through coursework, projects, midterms, finals, and in-class performance—not a single exam. Students earn credits upon successful course completion.">
+          双学分课程的成绩是根据学生的日常作业、期中及期末考试、
+          报告和其他课堂活动综合考量而获得成绩，
+          而不是根据期末考试一考定成绩。
+          学生通过课程即可获得学分。
+        </p>
+      </div>
+
+      <div class="adv-card">
+        <h3 data-zh="大学课程难度" data-en="University-level Academic Rigor">大学课程难度</h3>
+        <p
+          data-zh="双学分课程采用大学课程体系、教学大纲与评分标准，并由认证师资授课，可有效提升学生学术能力与 GPA 表现。"
+          data-en="ACCP follows university syllabi and grading standards taught by qualified faculty, strengthening academic capability and supporting stronger GPA outcomes.">
+          双学分课程使用大学课程体系、教学大纲、评分标准以及师资认证的课程，
+          可有效帮助学生提升 GPA。
+        </p>
+      </div>
+
+      <div class="adv-card">
+        <h3 data-zh="节省时间及费用" data-en="Time & Cost Efficiency">节省时间及费用</h3>
+        <p
+          data-zh="学生在高中阶段即可修读双学分课程，提前获得大学学分与成绩单；进入大学后可节省修读时间，更早毕业/深造，或修读主副学位，同时节省学费与生活成本。"
+          data-en="By earning university credits in high school, students save time in college—enabling earlier graduation or advanced study, double majors/minors, and reduced tuition and living expenses.">
+          学生在高中阶段即可修读双学分课程，
+          提前拿到大学学分和大学成绩单，
+          在大学期间可以节省时间提前考研、毕业，
+          或者多修主副学位，更能节省大学学费和生活费。
+        </p>
+      </div>
+
+      <div class="adv-card">
+        <h3 data-zh="超高学分转换率" data-en="High Credit Transfer Rate">超高学分转换率</h3>
+        <p
+          data-zh="双学分课程学分转换率平均可达 90%，显著高于 AP 约 30% 的转换率。"
+          data-en="Dual-credit transfer rates average up to 90%, significantly higher than typical AP credit conversion rates (around 30%).">
+          双学分课程的学分转换率平均可达 90%,
+          远高于 AP 30% 的转换率，优势明显。
+        </p>
+      </div>
+
+      <div class="adv-card">
+        <h3 data-zh="学分认可度高" data-en="Widely Recognized Credits">学分认可度高</h3>
+        <p
+          data-zh="据不完全统计，美国与加拿大高校普遍承认双学分课程；在美国排名前 80 的大学中，超过 50 所承认双学分课程，且认可范围仍在扩大。"
+          data-en="Dual-credit is widely recognized across U.S. and Canadian institutions. Among the Top 80 universities in the U.S., over 50 accept dual-credit—and the number continues to grow.">
+          据不完全统计，美国和加拿大的大学普遍承认双学分课程。
+          其中，在美国排名前 80 的大学中，
+          超过 50 所大学承认双学分课程，
+          且这一数字每年都在增长。
+        </p>
+      </div>
+
+      <div class="adv-card">
+        <h3 data-zh="助力大学申请" data-en="Stronger Admissions Competitiveness">助力大学申请</h3>
+        <p
+          data-zh="参加双学分课程的学生学习能力更突出、学术背景更扎实，在大学申请中更具竞争力。"
+          data-en="Students who complete dual-credit courses demonstrate stronger learning capacity and academic readiness, making them more competitive in university admissions.">
+          据统计，参加双学分课程的学生学习能力更为突出，
+          具备更强的学术背景，在大学申请中拥有更高的竞争力。
+        </p>
+      </div>
+
+      <div class="adv-card">
+        <h3 data-zh="提前适应大学节奏" data-en="Early University Readiness">提前适应大学节奏</h3>
+        <p
+          data-zh="双学分课程采用大学教学模式与评估体系，高中阶段即可体验大学强度与节奏，减少入学后的适应压力，为顺利完成本科学习打下基础。"
+          data-en="With university teaching and assessment models, students experience real college pace early—reducing transition stress and building a strong foundation for undergraduate success.">
+          双学分课程采用大学教学模式与评估体系，
+          学生在高中阶段即可提前体验大学级别的课程强度与学习节奏，
+          有效减少入学后的适应压力，为顺利完成本科学习打下坚实基础。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= Hero 2 ================= -->
+<section class="hero-section">
+
+  <img
+    src="images/ICL2.jpg"
+    alt="Iceland Background"
+    class="hero-image hero-image-up"
+  />
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1
+      data-zh="从提前适应大学节奏, 到顺利走进世界名校, ACCP 陪伴学生走好每一个阶段"
+      data-en="From early readiness to admission into global top institutions, ACCP supports students at every stage.">
+      从提前适应大学节奏, 到顺利走进世界名校, ACCP 陪伴学生走好每一个阶段
+    </h1>
+
+    <a href="contact.html" class="hero-btn"
+       data-zh="立即咨询"
+       data-en="Consult Now">
+      立即咨询
+    </a>
+  </div>
+</section>
+
+
+<!-- ================= Footer / Contact ================= -->
+<section class="contact-section">
+  <div class="contact-container">
+
+    <div class="contact-brand">
+      <img src="images/logo.png" alt="Ivyelite Logo" class="contact-logo">
+
+      <p class="contact-slogan"
+         data-zh="以终为始 从名校录取到名企就业"
+         data-en="Outcome-first: from top admissions to top careers">
+        以终为始 从名校录取到名企就业
+      </p>
+    </div>
+
+    <div class="contact-info">
+      <img src="images/QRcode.png" alt="WeChat QR Code" class="contact-qr">
+      <p class="contact-qr-label"
+         data-zh="官方微信"
+         data-en="Official WeChat">
+        官方微信
+      </p>
+
+      <div class="contact-details">
+        <p>📞 +1-984-369-3566</p>
+        <p>📞 +1-919-259-9861</p>
+        <p>📞 +86 18853235062</p>
+        <p data-zh="电子邮箱： ivyelite001@gmail.com"
+           data-en="Email: ivyelite001@gmail.com">
+          电子邮箱： ivyelite001@gmail.com
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    © 2025 IvyElite, LLC
+  </div>
+</section>
+
+
+<!-- ================= 手机端菜单 ================= -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.querySelector(".nav-toggle");
+    var menu = document.querySelector(".navbar-menu");
+
+    if (!btn || !menu) return;
+
+    btn.addEventListener("click", function () {
+      var isOpen = menu.classList.contains("is-open");
+      if (isOpen) {
+        menu.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+      } else {
+        menu.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+</script>
+
+<!-- ================= 语言切换（方案 C：允许指定元素使用 innerHTML） ================= -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var savedLang = localStorage.getItem("ivyelite_lang");
+    var currentLang = savedLang ? savedLang : "zh";
+
+    var toggleBtn = document.getElementById("langToggle");
+    var translatable = document.querySelectorAll("[data-zh][data-en]");
+    var titleEl = document.querySelector("title");
+    var menuBtn = document.querySelector(".nav-toggle");
+    var menu = document.querySelector(".navbar-menu");
+
+    if (!toggleBtn) return;
+
+    function updateButtonText() {
+      if (currentLang === "zh") {
+        toggleBtn.textContent = "中 / EN";
+      } else {
+        toggleBtn.textContent = "EN / 中";
+      }
+    }
+
+    function closeMenu() {
+      if (menu) {
+        menu.classList.remove("is-open");
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+    }
+
+    function applyLang() {
+      translatable.forEach(function (el) {
+        var val = el.dataset[currentLang] || "";
+
+        /* ✅ 仅允许这些元素使用 <br>（你也可以按需加 class） */
+        if (el.classList.contains("accp-card") || el.tagName.toLowerCase() === "span") {
+          // 这里的 span 都包含 <br>，用 innerHTML 才能保留换行
+          el.innerHTML = val;
+        } else {
+          el.textContent = val;
+        }
+      });
+
+      if (titleEl && titleEl.dataset && titleEl.dataset[currentLang]) {
+        titleEl.textContent = titleEl.dataset[currentLang];
+      }
+
+      document.documentElement.lang = currentLang === "zh" ? "zh-CN" : "en";
+
+      if (menuBtn) {
+        if (currentLang === "zh") {
+          menuBtn.setAttribute("aria-label", menuBtn.getAttribute("data-aria-zh") || "打开菜单");
+        } else {
+          menuBtn.setAttribute("aria-label", menuBtn.getAttribute("data-aria-en") || "Open menu");
+        }
+      }
+
+      updateButtonText();
+      closeMenu();
+      localStorage.setItem("ivyelite_lang", currentLang);
+    }
+
+    toggleBtn.addEventListener("click", function () {
+      currentLang = currentLang === "zh" ? "en" : "zh";
+      applyLang();
+    });
+
+    applyLang();
+  });
+</script>
+
+</body>
+</html>

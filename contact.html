@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-zh="联系方式 | Ivyelite" data-en="Contact | Ivyelite">联系方式 | Ivyelite</title>
+  <link rel="stylesheet" href="navbar.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-container">
+
+    <div class="navbar-logo">
+      <img src="images/logo.png" alt="Ivyelite Logo" />
+    </div>
+
+    <!-- 手机端：汉堡按钮 -->
+    <button class="nav-toggle"
+            aria-label="打开菜单"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            data-aria-zh="打开菜单"
+            data-aria-en="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- 菜单 -->
+    <nav class="navbar-menu" id="primary-nav">
+      <a href="index.html" class="nav-item" data-zh="主页" data-en="Home">主页</a>
+      <a href="planning.html" class="nav-item" data-zh="留学规划" data-en="Planning">留学规划</a>
+      <a href="butler.html" class="nav-item" data-zh="留学管家" data-en="Butler">留学管家</a>
+      <a href="class.html" class="nav-item" data-zh="课程辅导" data-en="Tutoring">课程辅导</a>
+      <a href="career.html" class="nav-item" data-zh="职业规划" data-en="Career">职业规划</a>
+      <a href="ACCP.html" class="nav-item" data-zh="ACCP" data-en="ACCP">ACCP</a>
+      <a href="resource.html" class="nav-item" data-zh="师资力量" data-en="Mentors">师资力量</a>
+      <a href="contact.html" class="nav-item active" data-zh="联系方式" data-en="Contact">联系方式</a>
+    </nav>
+    
+    <!-- 语言切换按钮（复用 nav-item 样式） -->
+    <button id="langToggle" class="nav-item lang-toggle">中 / EN</button>
+
+  </div>
+</header>
+
+<section class="hero-section">
+
+  <img
+    src="images/blrbackground.jpg"
+    alt="Student consultation background"
+    class="hero-image"
+  />
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1
+      data-zh="我们更愿意先倾听你的需求，再给出专业建议"
+      data-en="We believe in listening first—before offering professional guidance.">
+      我们更愿意先倾听你的需求，再给出专业建议
+    </h1>
+
+    <!-- 问卷入口按钮：中英文跳转不同链接 -->
+    <div class="survey-cta">
+      <a
+        id="surveyBtn"
+        class="survey-btn hero-btn"
+        href="https://wj.qq.com/s2/25395411/b6f7/"
+        data-zh="帮助我们更好了解你"
+        data-en="Help Us Better Understand You"
+        data-zh-href="https://wj.qq.com/s2/25395411/b6f7/"
+        data-en-href="https://wj.qq.com/s2/25395220/4a17/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        帮助我们更好了解你
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- 左侧：品牌 -->
+    <div class="contact-brand">
+      <img src="images/logo.png" alt="Ivyelite Logo" class="contact-logo">
+
+      <p class="contact-slogan"
+         data-zh="以终为始 从名校录取到名企就业"
+         data-en="Outcome-first: from top admissions to top careers">
+        以终为始 从名校录取到名企就业
+      </p>
+    </div>
+
+    <!-- 右侧：微信 + 联系方式 -->
+    <div class="contact-info">
+      <img src="images/QRcode.png" alt="WeChat QR Code" class="contact-qr">
+
+      <p class="contact-qr-label"
+         data-zh="官方微信"
+         data-en="Official WeChat">
+        官方微信
+      </p>
+
+      <div class="contact-details">
+        <p>📞 +1-984-369-3566</p>
+        <p>📞 +1-919-259-9861</p>
+        <p>📞 +86 18853235062</p>
+        <p
+          data-zh="电子邮箱： ivyelite001@gmail.com"
+          data-en="Email: ivyelite001@gmail.com">
+          电子邮箱： ivyelite001@gmail.com
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-copyright">
+    © 2025 IvyElite, LLC
+  </div>
+</section>
+
+<!-- 手机端菜单 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.querySelector(".nav-toggle");
+    var menu = document.querySelector(".navbar-menu");
+
+    if (!btn || !menu) return;
+
+    btn.addEventListener("click", function () {
+      var isOpen = menu.classList.contains("is-open");
+      if (isOpen) {
+        menu.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+      } else {
+        menu.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var savedLang = localStorage.getItem("ivyelite_lang");
+    var currentLang = savedLang ? savedLang : "zh";
+
+    var toggleBtn = document.getElementById("langToggle");
+    var translatable = document.querySelectorAll("[data-zh][data-en]");
+    var titleEl = document.querySelector("title");
+    var menuBtn = document.querySelector(".nav-toggle");
+    var menu = document.querySelector(".navbar-menu");
+
+    if (!toggleBtn) return;
+
+    function updateButtonText() {
+      toggleBtn.textContent = (currentLang === "zh") ? "中 / EN" : "EN / 中";
+    }
+
+    function closeMenu() {
+      if (menu) menu.classList.remove("is-open");
+      if (menuBtn) menuBtn.setAttribute("aria-expanded", "false");
+    }
+
+    function applyLang() {
+      translatable.forEach(function (el) {
+        var val = el.dataset[currentLang] || "";
+
+        // 只允许 hs-metric__label 使用 <br>
+        if (el.classList.contains("hs-metric__label")) {
+          el.innerHTML = val;     // 允许 <br>
+        } else {
+          el.textContent = val;  // 其他全部走安全模式
+        }
+        // ===== 元素带有 data-zh-href / data-en-href，则按语言切换链接 =====
+        var hrefKey = currentLang + "Href"; // zhHref 或 enHref
+        if (el.tagName === "A" && el.dataset && el.dataset[hrefKey]) {
+          el.setAttribute("href", el.dataset[hrefKey]);
+        }
+
+      });
+
+      if (titleEl && titleEl.dataset && titleEl.dataset[currentLang]) {
+        titleEl.textContent = titleEl.dataset[currentLang];
+      }
+
+      document.documentElement.lang = (currentLang === "zh") ? "zh-CN" : "en";
+
+      if (menuBtn) {
+        menuBtn.setAttribute(
+          "aria-label",
+          (currentLang === "zh")
+            ? (menuBtn.getAttribute("data-aria-zh") || "打开菜单")
+            : (menuBtn.getAttribute("data-aria-en") || "Open menu")
+        );
+      }
+
+      updateButtonText();
+      closeMenu();
+      localStorage.setItem("ivyelite_lang", currentLang);
+    }
+
+    toggleBtn.addEventListener("click", function () {
+      currentLang = (currentLang === "zh") ? "en" : "zh";
+      applyLang();
+    });
+
+    applyLang();
+  });
+</script>
+
+</body>
+</html>
