@@ -2758,7 +2758,7 @@ html{
 .survey-cta{
   position: absolute;        
   left: 50%;
-  bottom: 90px;              
+  bottom: -50px;              
   transform: translateX(-50%);
   z-index: 3;                
   display: flex;
@@ -2791,7 +2791,7 @@ html{
 /* 手机端适配：避免太靠下被遮挡 */
 @media (max-width: 768px){
   .survey-cta{
-    bottom: 70px;
+    bottom: -50px;
     padding: 0 16px;
   }
   .survey-btn{
@@ -2800,5 +2800,6 @@ html{
     text-align: center;
   }
 }
+
 
 
